@@ -77,3 +77,16 @@ footer{width:min(1180px,calc(100% - 2rem));margin:0 auto;padding:2.2rem 0 3rem;b
 
 @media(max-width:900px){.desktop-nav{display:none}.mobile-nav{display:block}.hero-inner,.split-section,.case-grid,.about-grid,.contact-grid,.approach-section{grid-template-columns:1fr;gap:2rem}.card-grid.three,.card-grid.four,.pricing-grid,.case-notes{grid-template-columns:1fr}.hero-dark{padding-top:9.5rem}.hero-logo-card{max-width:560px}.service-list article{grid-template-columns:40px 1fr}.contact-aside{border-left:0;border-top:1px solid rgba(255,255,255,.08);padding-left:0;padding-top:2rem}.about-photos{grid-template-columns:1fr}.callout,.simple-cta{padding:2rem;flex-direction:column;align-items:flex-start}footer{grid-template-columns:1fr;gap:1rem}footer p{text-align:left}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.project-preview{transition:none}}
+
+
+/* About page family photo */
+.family-photo-image{
+  display:block;
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  object-position:center;
+  border:1px solid var(--line);
+  border-radius:16px;
+  box-shadow:0 18px 45px rgba(0,0,0,.22);
+}
