@@ -31,6 +31,7 @@ const current = relativePath === '' ? '/' : relativePath;
         <span class="brand-copy"><strong>Mill City</strong><span>Web Studio</span></span>
       </a>
       <nav class="desktop-nav" aria-label="Primary">
+        <a class:list={[current === '/' && 'active']} href={pagePath()}>Home</a>
         <a class:list={[current === '/work/' && 'active']} href={pagePath('work/')}>Work</a>
         <a class:list={[current === '/services/' && 'active']} href={pagePath('services/')}>Services</a>
         <a class:list={[current === '/about/' && 'active']} href={pagePath('about/')}>About</a>
@@ -39,6 +40,7 @@ const current = relativePath === '' ? '/' : relativePath;
       <details class="mobile-nav">
         <summary aria-label="Open navigation">Menu</summary>
         <div class="mobile-nav-panel">
+          <a href={pagePath()}>Home</a>
           <a href={pagePath('work/')}>Work</a>
           <a href={pagePath('services/')}>Services</a>
           <a href={pagePath('about/')}>About</a>
@@ -53,6 +55,7 @@ const current = relativePath === '' ? '/' : relativePath;
         <span>Minneapolis, Minnesota</span>
       </div>
       <div class="footer-links">
+        <a href={pagePath()}>Home</a>
         <a href={pagePath('work/')}>Work</a>
         <a href={pagePath('services/')}>Services</a>
         <a href={pagePath('about/')}>About</a>
