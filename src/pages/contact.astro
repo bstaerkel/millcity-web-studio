@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Contact | Mill City Web Studio" description="Start a website project with Mill City Web Studio in Minneapolis.">
+  <section class="section-shell page-hero">
+    <div class="eyebrow">Start a project</div>
+    <h1>Tell me about your business and what you need.</h1>
+    <p>New site, redesign, or ongoing support — you don't need a polished project brief. A few details are enough to start the conversation.</p>
+  </section>
+
+  <section class="section-shell contact-grid">
+    <form class="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain">
+      <label>Name<input type="text" name="name" autocomplete="name" required /></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+      <label>Business or organization<input type="text" name="business" autocomplete="organization" /></label>
+      <label>What do you need?<select name="project"><option>New website</option><option>Website redesign</option><option>Hosting / maintenance</option><option>Not sure yet</option></select></label>
+      <label>Tell me a little about the project<textarea name="message" rows="6" required></textarea></label>
+      <button class="button primary" type="submit">Send project details</button>
+      <p class="form-note">Dev-site form for now — a real form endpoint and business email will be connected before launch.</p>
+    </form>
+    <aside class="contact-aside">
+      <div class="eyebrow">Mill City Web Studio</div>
+      <h2>Minneapolis, Minnesota</h2>
+      <p>Working with independent businesses locally and beyond.</p>
+      <div class="contact-rule"></div>
+      <p>I keep the project list intentionally small, so clients work directly with me rather than through an agency account team.</p>
+      <div class="contact-rule"></div>
+      <p class="aside-small">Typical projects can include design, development, hosting, domain setup, search fundamentals, and ongoing support.</p>
+    </aside>
+  </section>
+</BaseLayout>
