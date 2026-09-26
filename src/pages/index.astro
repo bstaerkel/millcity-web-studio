@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { pagePath } from '../lib/paths';
+---
+<BaseLayout title="Mill City Web Studio | Minneapolis Web Design" description="Thoughtful custom websites for small businesses, designed and built in Minneapolis by a software engineer with 20+ years of experience.">
+  <section class="hero section-shell">
+    <div class="eyebrow">Independent web studio · Minneapolis, Minnesota</div>
+    <div class="hero-grid">
+      <div>
+        <h1>Small-business websites, built with big-project experience.</h1>
+        <p class="hero-copy">Thoughtful custom websites for independent businesses — designed to feel established, work beautifully on every screen, and stay easy to maintain.</p>
+        <div class="button-row">
+          <a class="button primary" href={pagePath('work/')}>View my work</a>
+          <a class="button secondary" href={pagePath('contact/')}>Start a project</a>
+        </div>
+      </div>
+      <div class="mill-card" aria-hidden="true">
+        <div class="mill-lines"></div>
+        <div class="bridge-arc"></div>
+        <span class="mill-number">20+</span>
+        <span class="mill-label">years in software engineering</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell proof-strip" aria-label="Services at a glance">
+    <span>Custom design</span><span>Responsive development</span><span>Modern hosting</span><span>Ongoing support</span>
+  </section>
+
+  <section class="section-shell split-section">
+    <div>
+      <div class="eyebrow">Featured work</div>
+      <h2>MLAesthetics</h2>
+      <p>A complete website for an independent aesthetics studio in Bend, Oregon — from content structure and visual direction through booking integration, local SEO setup, domain configuration, and launch.</p>
+      <a class="text-link" href={pagePath('work/')}>See the case study →</a>
+    </div>
+    <a class="project-preview" href="https://mlaestheticsbend.com/" target="_blank" rel="noreferrer" aria-label="Open the MLAesthetics website in a new tab">
+      <div class="browser-bar"><i></i><i></i><i></i><span>mlaestheticsbend.com</span></div>
+      <div class="preview-body">
+        <span class="preview-kicker">RESULTS-ORIENTED SKIN CARE</span>
+        <strong>MLAESTHETICS</strong>
+        <em>Bend, Oregon</em>
+      </div>
+    </a>
+  </section>
+
+  <section class="section-shell services-home">
+    <div class="eyebrow">What I do</div>
+    <h2>Professional web work without the agency runaround.</h2>
+    <div class="card-grid three">
+      <article><span>01</span><h3>Website design + build</h3><p>Custom sites shaped around your business, your customers, and the actions you want visitors to take.</p></article>
+      <article><span>02</span><h3>Refresh + improve</h3><p>Modernize an existing site, sharpen the message, improve mobile usability, and clean up performance.</p></article>
+      <article><span>03</span><h3>Hosting + care</h3><p>Deployment, domain setup, content updates, and ongoing support without server headaches or mystery.</p></article>
+    </div>
+    <a class="text-link" href={pagePath('services/')}>Explore services →</a>
+  </section>
+
+  <section class="section-shell approach-section">
+    <div class="approach-lead">
+      <div class="eyebrow">A smaller way to work</div>
+      <h2>You work directly with the person building your site.</h2>
+    </div>
+    <div class="approach-copy">
+      <p>Mill City Web Studio is intentionally small. I take on a limited number of projects so communication stays direct, decisions stay practical, and your website gets the attention it deserves.</p>
+      <p>No account handoffs. No oversized process. Just experienced software engineering applied to a focused small-business website project.</p>
+    </div>
+  </section>
+
+  <section class="section-shell about-tease">
+    <div class="eyebrow">Rooted in Minneapolis</div>
+    <h2>The name comes from home.</h2>
+    <p>I've spent 20+ years working in software engineering, and Minneapolis has been the backdrop to a lot of life along the way.</p>
+    <p class="personal-note">My wife and I got engaged on the Stone Arch Bridge and were married nearby at St. Anthony Main. Today we're raising three kids here, spending plenty of time around youth sports, and fitting in the Timberwolves and Twins whenever we can.</p>
+    <a class="text-link" href={pagePath('about/')}>More about me →</a>
+  </section>
+
+  <section class="section-shell callout">
+    <div><div class="eyebrow">Have a project in mind?</div><h2>Let's build a site that feels like your business.</h2></div>
+    <a class="button primary" href={pagePath('contact/')}>Start a project</a>
+  </section>
+</BaseLayout>
