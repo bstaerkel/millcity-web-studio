@@ -39,9 +39,21 @@ import { pagePath } from '../lib/paths';
     </figure>
   </section>
 
-  <section class="section-shell about-photo-note">
-    <div class="eyebrow">A personal connection</div>
-    <p>Minneapolis is part of the story behind the studio, and these photos add a little more of that personal connection.</p>
+  <section class="section-shell mill-city-story">
+    <figure class="mill-city-story-media">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/St._Anthony_Main_15.jpg?width=1600" alt="Historic brick buildings along Saint Anthony Main in Minneapolis" />
+      <blockquote>Historic character.<br />Modern work.</blockquote>
+      <figcaption>
+        Saint Anthony Main, Minneapolis · Photo: AlexiusHoratius /
+        <a href="https://commons.wikimedia.org/wiki/File:St._Anthony_Main_15.jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a>
+      </figcaption>
+    </figure>
+    <div class="mill-city-story-copy">
+      <div class="eyebrow">The Mill City story</div>
+      <h2>Rooted in Minneapolis. Built for what’s next.</h2>
+      <p>Mill City is a name tied to Minneapolis — brick, cobblestone, riverfront industry, and historic spaces that have found new purpose.</p>
+      <p>That connection between old and new shapes the studio too: bringing the experience, personality, and story behind a business into a modern website that feels current, clear, and ready for what comes next.</p>
+    </div>
   </section>
 
   <section class="section-shell principles">
@@ -65,7 +77,65 @@ import { pagePath } from '../lib/paths';
     border:1px solid rgba(255,255,255,.10);
     border-radius:16px;
   }
+  .mill-city-story{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:4rem;
+    align-items:center;
+    padding:5rem 0;
+    border-top:1px solid rgba(255,255,255,.09);
+    border-bottom:1px solid rgba(255,255,255,.09);
+  }
+  .mill-city-story-media{
+    position:relative;
+    margin:0;
+    min-height:440px;
+    overflow:hidden;
+    border-radius:4px;
+    background:#11181d;
+  }
+  .mill-city-story-media:after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg,rgba(5,8,10,.08),rgba(5,8,10,.72));
+    pointer-events:none;
+  }
+  .mill-city-story-media img{
+    display:block;
+    width:100%;
+    height:440px;
+    object-fit:cover;
+    filter:saturate(.78) contrast(1.03);
+  }
+  .mill-city-story-media blockquote{
+    position:absolute;
+    z-index:1;
+    left:2rem;
+    bottom:2.5rem;
+    margin:0;
+    max-width:10ch;
+    color:#fff7ec;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(2rem,4vw,3.7rem);
+    line-height:.98;
+    letter-spacing:-.03em;
+  }
+  .mill-city-story-media figcaption{
+    position:absolute;
+    z-index:2;
+    left:1rem;
+    bottom:.7rem;
+    color:rgba(255,255,255,.68);
+    font-size:.62rem;
+    letter-spacing:.04em;
+  }
+  .mill-city-story-media figcaption a{text-decoration:underline;text-underline-offset:2px}
+  .mill-city-story-copy h2{max-width:12ch}
+  .mill-city-story-copy p{color:var(--soft);max-width:34rem}
   @media(max-width:900px){
     .family-photo-image{min-height:0}
+    .mill-city-story{grid-template-columns:1fr;gap:2.5rem;padding:4rem 0}
+    .mill-city-story-media,.mill-city-story-media img{min-height:360px;height:360px}
   }
 </style>
