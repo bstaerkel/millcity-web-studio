@@ -592,3 +592,12 @@ footer strong{color:#f0eadf}
 @media(max-width:800px){
   .desktop-nav{gap:.85rem}
 }
+
+
+.process-heading{
+  padding:2rem 0 1.4rem;
+}
+.process-heading h2{
+  max-width:17ch;
+  margin-bottom:0;
+}
