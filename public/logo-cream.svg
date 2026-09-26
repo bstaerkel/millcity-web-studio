@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+<title>Mill City Web Studio MC bridge mark</title>
+<rect x="12" y="12" width="232" height="232" rx="34" fill="#0f1418" stroke="#f2dfad" stroke-width="8"/>
+<rect x="22" y="22" width="212" height="212" rx="27" fill="none" stroke="#f2dfad" stroke-width="2" opacity=".6"/>
+<text x="128" y="118" text-anchor="middle" font-family="Georgia,Times New Roman,serif" font-size="92" font-weight="700" fill="#f7e8b9" letter-spacing="-5">MC</text>
+<path d="M42 150 H214" stroke="#f7e8b9" stroke-width="6" stroke-linecap="round"/>
+<path d="M50 202 V181 Q50 157 74 157 Q98 157 98 181 V202 M98 202 V181 Q98 157 128 157 Q158 157 158 181 V202 M158 202 V181 Q158 157 182 157 Q206 157 206 181 V202" fill="none" stroke="#f7e8b9" stroke-width="7" stroke-linecap="round"/>
+<circle cx="55" cy="146" r="4" fill="#f7e8b9"/><circle cx="128" cy="146" r="4" fill="#f7e8b9"/><circle cx="201" cy="146" r="4" fill="#f7e8b9"/>
+</svg>
