@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { pagePath } from '../lib/paths';
+---
+<BaseLayout title="About | Mill City Web Studio" description="About Mill City Web Studio, a Minneapolis web studio founded by a software engineer with 20+ years of experience.">
+  <section class="section-shell page-hero">
+    <div class="eyebrow">About</div>
+    <h1>Experienced software engineering, brought down to a human scale.</h1>
+    <p>I started Mill City Web Studio to help small businesses get the kind of thoughtful, technically solid website that can be hard to find between do-it-yourself builders and large agencies.</p>
+  </section>
+
+  <section class="section-shell about-grid">
+    <div class="about-stat"><strong>20+</strong><span>years working in software engineering</span></div>
+    <div class="about-copy">
+      <p class="lede">I'm a Minneapolis-based software engineer who has spent more than two decades building and supporting software. Mill City Web Studio is where I bring that experience to smaller, more personal website projects.</p>
+      <p>I intentionally keep the studio small. Clients work directly with me from the first conversation through design, development, launch, and the practical details that come afterward.</p>
+      <p>That engineering background shapes the way I work. I care about the details customers notice — speed, mobile usability, clear calls to action, consistency — and the technical details they don't, like deployment, maintainability, accessibility, and reliable hosting.</p>
+      <p>Minneapolis is home in more ways than one. My wife and I got engaged on the Stone Arch Bridge and were married nearby at St. Anthony Main, so the Mill City name has a personal connection to the place where we built our life together.</p>
+      <p>We're now raising three kids, ages 7, 11, and 14, so a lot of life happens around youth sports. When there's a little downtime, I'm usually following the Timberwolves or the Twins.</p>
+      <a class="button secondary" href={pagePath('contact/')}>Tell me about your project</a>
+    </div>
+  </section>
+
+  <section class="section-shell principles">
+    <div class="eyebrow">How I work</div>
+    <div class="card-grid three">
+      <article><h3>Keep it clear</h3><p>No unnecessary jargon, bloated process, or mystery around what is being built and why.</p></article>
+      <article><h3>Build it properly</h3><p>A polished front end supported by a sensible technical foundation and a maintainable workflow.</p></article>
+      <article><h3>Make it useful</h3><p>The site should earn trust, answer real customer questions, and make the next step obvious.</p></article>
+    </div>
+  </section>
+</BaseLayout>
