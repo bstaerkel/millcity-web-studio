@@ -669,3 +669,29 @@ body{
 footer{
   background:transparent;
 }
+
+
+/* 2026-09-26: strengthen type hierarchy */
+h2{
+  font-size:clamp(2.5rem,5vw,5rem);
+  line-height:1;
+}
+h3{
+  font-size:clamp(1.8rem,2.4vw,2.2rem);
+  line-height:1.08;
+}
+.services-home .card-grid h3,
+.principles .card-grid h3{
+  font-size:clamp(1.9rem,2.5vw,2.35rem);
+}
+.case-notes strong{
+  font-size:clamp(1.45rem,2vw,1.8rem);
+  line-height:1.15;
+}
+.contact-aside h2{
+  font-size:clamp(2.7rem,4vw,4rem);
+}
+@media(max-width:900px){
+  h2{font-size:clamp(2.25rem,9vw,3.5rem)}
+  h3{font-size:1.75rem}
+}
