@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { pagePath } from '../lib/paths';
+---
+<BaseLayout title="Services | Mill City Web Studio" description="Website design, development, hosting, and ongoing support for small businesses.">
+  <section class="section-shell page-hero">
+    <div class="eyebrow">Services</div>
+    <h1>A practical website partner for a small business.</h1>
+    <p>You don't need a giant agency engagement to get a polished, fast, professional website. The focus is the work your business actually needs.</p>
+  </section>
+
+  <section class="section-shell service-list">
+    <article><span>01</span><div><h2>Custom website design + build</h2><p>Strategy, structure, visual direction, development, responsive behavior, content implementation, launch, and the technical setup required to get your site live.</p></div></article>
+    <article><span>02</span><div><h2>Website refresh</h2><p>For businesses with a site that feels dated, cluttered, slow, or difficult to use on mobile. Keep what works and rebuild what doesn't.</p></div></article>
+    <article><span>03</span><div><h2>Hosting + deployment</h2><p>Modern static hosting, Git-based deployment, domain configuration, HTTPS, and a clean workflow for future changes.</p></div></article>
+    <article><span>04</span><div><h2>Ongoing website care</h2><p>Content updates, service and price changes, image swaps, new sections, performance checks, and practical support after launch.</p></div></article>
+  </section>
+
+  <section class="section-shell process">
+    <div class="eyebrow">How it works</div>
+    <div class="card-grid four">
+      <article><span>1</span><h3>Understand</h3><p>Your business, customers, goals, and what the website needs to accomplish.</p></article>
+      <article><span>2</span><h3>Design</h3><p>Visual direction, structure, messaging, and mobile behavior.</p></article>
+      <article><span>3</span><h3>Build</h3><p>Fast, maintainable code with a clean deployment workflow.</p></article>
+      <article><span>4</span><h3>Launch</h3><p>Domain, hosting, search setup, handoff, and ongoing support if you want it.</p></article>
+    </div>
+  </section>
+
+  <section class="section-shell simple-cta">
+    <div><div class="eyebrow">Not sure what you need?</div><h2>That's a perfectly good place to start.</h2></div>
+    <a class="button primary" href={pagePath('contact/')}>Talk through the project</a>
+  </section>
+</BaseLayout>
