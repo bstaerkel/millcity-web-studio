@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+<title>Mill City Web Studio neon MC bridge mark</title>
+<defs>
+  <filter id="glowC" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="glowO" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="11" y="11" width="234" height="234" rx="36" fill="#0c1115" stroke="#68e8ff" stroke-width="7" filter="url(#glowC)"/>
+<rect x="21" y="21" width="214" height="214" rx="28" fill="none" stroke="#1c4350" stroke-width="4"/>
+<text x="128" y="116" text-anchor="middle" font-family="Georgia,Times New Roman,serif" font-size="92" font-weight="700" fill="#ffe7ad" stroke="#ff5a2f" stroke-width="5" paint-order="stroke fill" letter-spacing="-5" filter="url(#glowO)">MC</text>
+<path d="M42 150 H214" stroke="#ffc34f" stroke-width="5" stroke-linecap="round" filter="url(#glowO)"/>
+<path d="M50 204 V182 Q50 157 74 157 Q98 157 98 182 V204 M98 204 V182 Q98 157 128 157 Q158 157 158 182 V204 M158 204 V182 Q158 157 182 157 Q206 157 206 182 V204" fill="none" stroke="#ffc34f" stroke-width="7" stroke-linecap="round" filter="url(#glowO)"/>
+<path d="M40 213 H216" stroke="#68e8ff" stroke-width="4" opacity=".85" filter="url(#glowC)"/>
+<circle cx="55" cy="145" r="5" fill="#fff2b6" filter="url(#glowO)"/><circle cx="128" cy="145" r="5" fill="#fff2b6" filter="url(#glowO)"/><circle cx="201" cy="145" r="5" fill="#fff2b6" filter="url(#glowO)"/>
+</svg>
