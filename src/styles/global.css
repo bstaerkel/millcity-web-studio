@@ -680,3 +680,184 @@ footer strong{color:#f0eadf}
   .pricing-grid{grid-template-columns:1fr}
   .pricing-grid article{min-height:0}
 }
+
+
+/* Homepage visual polish */
+.home-band{
+  position:relative;
+  isolation:isolate;
+}
+.home-band:before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:0;
+  bottom:0;
+  left:50%;
+  width:100vw;
+  transform:translateX(-50%);
+  pointer-events:none;
+}
+.home-band-light:before{
+  background:
+    linear-gradient(180deg,rgba(245,242,235,.96),rgba(231,235,235,.92));
+  border-top:1px solid rgba(49,76,89,.10);
+  border-bottom:1px solid rgba(49,76,89,.10);
+}
+.home-band-dark:before{
+  background:
+    radial-gradient(circle at 80% 20%,rgba(112,199,221,.07),transparent 26%),
+    radial-gradient(circle at 12% 80%,rgba(155,77,53,.10),transparent 24%),
+    linear-gradient(135deg,#11191e,#1c2a31 58%,#12191e);
+  border-top:1px solid rgba(194,161,93,.20);
+  border-bottom:1px solid rgba(194,161,93,.16);
+}
+
+.services-home{
+  padding:7rem 0;
+}
+.services-home .eyebrow,
+.featured-home .eyebrow,
+.home-about .eyebrow{
+  display:flex;
+  align-items:center;
+  gap:.8rem;
+}
+.services-home .eyebrow:before,
+.featured-home .eyebrow:before,
+.home-about .eyebrow:before{
+  content:"";
+  width:34px;
+  height:1px;
+  background:currentColor;
+  opacity:.65;
+}
+.services-home .card-grid{
+  gap:1.25rem;
+}
+.services-home .card-grid article{
+  min-height:250px;
+  padding:1.8rem;
+  border-color:rgba(49,76,89,.12);
+  box-shadow:0 12px 32px rgba(21,25,28,.05);
+}
+.services-home .card-grid article>span{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:34px;
+  height:34px;
+  margin-bottom:2.2rem;
+  border:1px solid rgba(155,77,53,.34);
+  color:var(--brick);
+  font-size:.68rem;
+  background:rgba(255,255,255,.34);
+}
+.services-home .card-grid h3{
+  font-size:1.9rem;
+  max-width:11ch;
+}
+.services-home .text-link{
+  color:var(--blue-deep);
+  border-bottom:1px solid rgba(49,76,89,.28);
+  padding-bottom:.18rem;
+}
+
+.approach-section{
+  position:relative;
+  overflow:hidden;
+  margin-top:5rem;
+  margin-bottom:5rem;
+  box-shadow:0 20px 60px rgba(15,24,29,.12);
+}
+.approach-section:after{
+  content:"";
+  position:absolute;
+  width:240px;
+  height:240px;
+  right:-80px;
+  top:-90px;
+  border:1px solid rgba(112,199,221,.18);
+  border-radius:50%;
+  box-shadow:
+    0 0 0 34px rgba(112,199,221,.03),
+    0 0 0 68px rgba(194,161,93,.025);
+}
+.approach-section>*{position:relative;z-index:1}
+
+.featured-home{
+  padding:7rem 0;
+  color:var(--cream);
+}
+.featured-home h2{color:#f4ecdf}
+.featured-home p{color:#c3cbce}
+.featured-home .eyebrow{color:var(--cyan)}
+.featured-home .project-preview{
+  border:1px solid rgba(194,161,93,.22);
+  border-radius:10px;
+  box-shadow:0 24px 70px rgba(0,0,0,.30);
+}
+.featured-home .browser-bar{
+  border-bottom:1px solid rgba(216,185,146,.10);
+}
+.featured-home .preview-body{
+  position:relative;
+}
+.featured-home .preview-body:after{
+  content:"";
+  position:absolute;
+  inset:18px;
+  border:1px solid rgba(216,185,146,.14);
+  pointer-events:none;
+}
+
+.home-about{
+  position:relative;
+  padding:7rem 0;
+}
+.home-about:after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:5.5rem;
+  width:230px;
+  height:150px;
+  opacity:.20;
+  background:
+    linear-gradient(to bottom,transparent 0 23px,rgba(155,77,53,.30) 23px 24px) 0 0/100% 24px,
+    linear-gradient(to right,transparent 0 49px,rgba(155,77,53,.26) 49px 50px) 0 0/100px 48px,
+    linear-gradient(to right,transparent 0 49px,rgba(155,77,53,.22) 49px 50px) 50px 24px/100px 48px;
+  mask-image:linear-gradient(90deg,transparent,#000 28%,#000);
+  pointer-events:none;
+}
+.home-about>*{
+  position:relative;
+  z-index:1;
+}
+.home-about h2{
+  position:relative;
+  display:inline-block;
+}
+.home-about h2:after{
+  content:"";
+  display:block;
+  width:72px;
+  height:2px;
+  margin-top:1rem;
+  background:linear-gradient(90deg,var(--brick),var(--gold));
+}
+.home-about .personal-note{
+  max-width:45rem;
+}
+
+.callout{
+  box-shadow:0 22px 60px rgba(15,24,29,.14);
+}
+.callout h2{max-width:14ch}
+
+@media(max-width:800px){
+  .services-home,.featured-home,.home-about{padding:4.5rem 0}
+  .services-home .card-grid article{min-height:0}
+  .approach-section{margin-top:2rem;margin-bottom:2rem}
+  .home-about:after{width:140px;height:110px;top:3rem}
+}
