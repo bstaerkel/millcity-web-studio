@@ -35,7 +35,7 @@ const current = relativePath === '' ? '/' : relativePath;
         <a class:list={[current === '/work/' && 'active']} href={pagePath('work/')}>Work</a>
         <a class:list={[current === '/services/' && 'active']} href={pagePath('services/')}>Services</a>
         <a class:list={[current === '/about/' && 'active']} href={pagePath('about/')}>About</a>
-        <a class="nav-cta" href={pagePath('contact/')}>Start a project</a>
+        <a class="nav-cta" href={pagePath('contact/')}>Submit a request</a>
       </nav>
       <details class="mobile-nav">
         <summary aria-label="Open navigation">Menu</summary>
@@ -44,7 +44,7 @@ const current = relativePath === '' ? '/' : relativePath;
           <a href={pagePath('work/')}>Work</a>
           <a href={pagePath('services/')}>Services</a>
           <a href={pagePath('about/')}>About</a>
-          <a href={pagePath('contact/')}>Start a project</a>
+          <a href={pagePath('contact/')}>Submit a request</a>
         </div>
       </details>
     </header>
