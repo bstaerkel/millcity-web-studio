@@ -3,28 +3,45 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { pagePath } from '../lib/paths';
 ---
 <BaseLayout title="Mill City Web Studio | Minneapolis Web Design" description="Thoughtful custom websites for small businesses, designed and built in Minneapolis by a software engineer with 20+ years of experience.">
-  <section class="hero section-shell">
-    <div class="eyebrow">Independent web studio · Minneapolis, Minnesota</div>
-    <div class="hero-grid">
-      <div>
-        <h1>Bring your business to life online.</h1>
-        <p class="hero-copy">Thoughtful custom websites for independent businesses — designed to feel established, work beautifully on every screen, and stay easy to maintain.</p>
+  <section class="hero-dark">
+    <div class="hero-inner section-shell">
+      <div class="hero-copy-block">
+        <div class="eyebrow hero-eyebrow">Minneapolis web studio · Small-business focused</div>
+        <h1>Bring your business to life <span class="hero-accent">online.</span></h1>
+        <p class="hero-copy">Thoughtful websites for small businesses — designed to reflect your brand, connect with your customers, and bring what makes your business different to life online.</p>
         <div class="button-row">
-          <a class="button primary" href={pagePath('work/')}>View my work</a>
-          <a class="button secondary" href={pagePath('contact/')}>Start a project</a>
+          <a class="button neon-warm" href={pagePath('work/')}>View my work</a>
+          <a class="button neon-cool" href={pagePath('contact/')}>Start a project</a>
+        </div>
+        <div class="hero-footnote">
+          <span>20+ years in software engineering</span>
+          <span>Minneapolis, Minnesota</span>
         </div>
       </div>
-      <div class="mill-card" aria-hidden="true">
-        <div class="mill-lines"></div>
-        <div class="bridge-arc"></div>
-        <span class="mill-number">20+</span>
-        <span class="mill-label">years in software engineering</span>
+
+      <div class="hero-scene" aria-hidden="true">
+        <div class="scene-skyline">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="scene-warehouse">
+          <div class="brick-grid"></div>
+          <div class="window-row"><i></i><i></i><i></i></div>
+          <div class="neon-sign">
+            <strong>MILL CITY</strong>
+            <span>WEB STUDIO</span>
+          </div>
+        </div>
+        <div class="scene-bridge"><i></i><i></i><i></i></div>
+        <div class="scene-river"></div>
       </div>
     </div>
   </section>
 
-  <section class="section-shell proof-strip" aria-label="Services at a glance">
-    <span>Custom design</span><span>Responsive development</span><span>Modern hosting</span><span>Ongoing support</span>
+  <section class="section-shell proof-strip" aria-label="What Mill City Web Studio brings to a project">
+    <span>Small business first</span>
+    <span>Brand-led design</span>
+    <span>Direct collaboration</span>
+    <span>Built with experience</span>
   </section>
 
   <section class="section-shell split-section">
@@ -46,10 +63,10 @@ import { pagePath } from '../lib/paths';
 
   <section class="section-shell services-home">
     <div class="eyebrow">What I do</div>
-    <h2>Professional web work without the agency runaround.</h2>
+    <h2>Help your brand feel as good online as it does in real life.</h2>
     <div class="card-grid three">
-      <article><span>01</span><h3>Website design + build</h3><p>Custom sites shaped around your business, your customers, and the actions you want visitors to take.</p></article>
-      <article><span>02</span><h3>Refresh + improve</h3><p>Modernize an existing site, sharpen the message, improve mobile usability, and clean up performance.</p></article>
+      <article><span>01</span><h3>Website design + build</h3><p>Custom sites shaped around your business, your customers, and the personality behind your brand.</p></article>
+      <article><span>02</span><h3>Refresh + improve</h3><p>Modernize an existing site, sharpen the message, improve mobile usability, and make the experience feel more like you.</p></article>
       <article><span>03</span><h3>Hosting + care</h3><p>Deployment, domain setup, content updates, and ongoing support without server headaches or mystery.</p></article>
     </div>
     <a class="text-link" href={pagePath('services/')}>Explore services →</a>
@@ -62,15 +79,15 @@ import { pagePath } from '../lib/paths';
     </div>
     <div class="approach-copy">
       <p>Mill City Web Studio is intentionally small. I take on a limited number of projects so communication stays direct, decisions stay practical, and your website gets the attention it deserves.</p>
-      <p>No account handoffs. No oversized process. Just experienced software engineering applied to a focused small-business website project.</p>
+      <p>No account handoffs. No oversized process. Just experienced software engineering, thoughtful design, and a real interest in understanding what makes your business yours.</p>
     </div>
   </section>
 
   <section class="section-shell about-tease">
     <div class="eyebrow">Rooted in Minneapolis</div>
-    <h2>The name comes from home.</h2>
-    <p>I've spent 20+ years working in software engineering, and Minneapolis has been the backdrop to a lot of life along the way.</p>
-    <p class="personal-note">My wife and I got engaged on the Stone Arch Bridge and were married nearby at St. Anthony Main. Today we're raising three kids here, spending plenty of time around youth sports, and fitting in the Timberwolves and Twins whenever we can.</p>
+    <h2>Historic character. Modern work.</h2>
+    <p>The Mill City name comes from Minneapolis — flour mills, brick warehouses, riverfront industry, and the way that history has been reworked into something modern.</p>
+    <p class="personal-note">It is personal too. My wife and I got engaged on the Stone Arch Bridge and were married nearby at St. Anthony Main. Today we're raising three kids here, spending plenty of time around youth sports, and fitting in the Timberwolves and Twins whenever we can.</p>
     <a class="text-link" href={pagePath('about/')}>More about me →</a>
   </section>
 
