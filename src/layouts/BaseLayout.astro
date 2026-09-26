@@ -1,0 +1,64 @@
+---
+import '../styles/global.css';
+import { base, pagePath } from '../lib/paths';
+
+const {
+  title = 'Mill City Web Studio',
+  description = 'Thoughtful websites for small businesses, designed and built in Minneapolis.'
+} = Astro.props;
+
+const rawPath = Astro.url.pathname;
+const relativePath = rawPath.startsWith(base)
+  ? `/${rawPath.slice(base.length)}`.replace('//', '/')
+  : rawPath;
+const current = relativePath === '' ? '/' : relativePath;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#15191c" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href={pagePath('favicon.svg')} />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href={pagePath()} aria-label="Mill City Web Studio home">
+        <span class="brand-mark" aria-hidden="true"><span>MC</span></span>
+        <span class="brand-copy"><strong>Mill City</strong><span>Web Studio</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a class:list={[current === '/work/' && 'active']} href={pagePath('work/')}>Work</a>
+        <a class:list={[current === '/services/' && 'active']} href={pagePath('services/')}>Services</a>
+        <a class:list={[current === '/about/' && 'active']} href={pagePath('about/')}>About</a>
+        <a class="nav-cta" href={pagePath('contact/')}>Start a project</a>
+      </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Open navigation">Menu</summary>
+        <div class="mobile-nav-panel">
+          <a href={pagePath('work/')}>Work</a>
+          <a href={pagePath('services/')}>Services</a>
+          <a href={pagePath('about/')}>About</a>
+          <a href={pagePath('contact/')}>Start a project</a>
+        </div>
+      </details>
+    </header>
+    <main><slot /></main>
+    <footer>
+      <div>
+        <strong>Mill City Web Studio</strong>
+        <span>Minneapolis, Minnesota</span>
+      </div>
+      <div class="footer-links">
+        <a href={pagePath('work/')}>Work</a>
+        <a href={pagePath('services/')}>Services</a>
+        <a href={pagePath('about/')}>About</a>
+        <a href={pagePath('contact/')}>Contact</a>
+      </div>
+      <p>Thoughtful websites for small businesses.</p>
+    </footer>
+  </body>
+</html>
