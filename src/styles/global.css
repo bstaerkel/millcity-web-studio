@@ -551,3 +551,121 @@ main{
   }
   .simple-cta{padding:2.5rem 0}
 }
+
+
+/* 2026-09-26: carry the homepage dark editorial theme across all interior pages */
+.page-hero,
+.service-list,
+.pricing-section,
+.case-study,
+.process-heading,
+.case-notes,
+.upcoming,
+.about-grid,
+.about-photos,
+.about-photo-note,
+.principles,
+.contact-grid{
+  background:transparent;
+}
+
+.page-hero{
+  color:var(--text);
+}
+
+.service-list article,
+.case-meta,
+.about-stat,
+.about-photo-note{
+  border-color:rgba(255,255,255,.09);
+}
+
+.pricing-grid article,
+.case-notes>div,
+.principles .card-grid article{
+  background:transparent;
+  border:0;
+  border-top:1px solid rgba(255,255,255,.10);
+  border-radius:0;
+  box-shadow:none;
+  padding:1.6rem 0;
+}
+
+.pricing-grid{
+  gap:2rem;
+}
+
+.case-panel{
+  background:#11181d;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:6px;
+  box-shadow:none;
+}
+
+.pill-row span{
+  background:transparent;
+  border-color:rgba(255,255,255,.12);
+}
+
+.about-stat strong,
+.case-quote,
+.price-range,
+.service-list h2,
+.principles h3{
+  color:var(--text);
+}
+
+.family-photo-image,
+.photo-placeholder-art{
+  border-radius:4px;
+  box-shadow:none;
+}
+
+.contact-form{
+  background:transparent;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:6px;
+  box-shadow:none;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+  background:#0f1519;
+  border-color:rgba(255,255,255,.12);
+  border-radius:6px;
+}
+
+.contact-aside{
+  border-color:rgba(255,255,255,.09);
+}
+
+.simple-cta{
+  background:transparent;
+  border:0;
+  border-top:1px solid rgba(255,255,255,.10);
+  border-bottom:1px solid rgba(255,255,255,.10);
+  border-radius:0;
+  box-shadow:none;
+  padding-left:0;
+  padding-right:0;
+}
+
+.services-home,
+.featured-home,
+.about-tease,
+.process,
+.principles,
+.pricing-section,
+.service-list,
+.upcoming{
+  color:var(--text);
+}
+
+body{
+  background:#0b1014;
+}
+
+footer{
+  background:transparent;
+}
