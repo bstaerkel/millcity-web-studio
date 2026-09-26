@@ -328,3 +328,33 @@ footer{width:min(1180px,calc(100% - 2rem));margin:0 auto;padding:2.2rem 0 3rem;b
   .home-about{grid-template-columns:1fr;gap:2.5rem;padding:4.5rem 0}
   .callout{padding:2.5rem 0}
 }
+
+
+/* 2026-09-26: bring interior page heroes in line with the quieter homepage */
+.page-hero{
+  margin-top:0;
+  padding:5.5rem 0 4rem;
+  border:0;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  border-radius:0;
+  overflow:visible;
+  background:transparent;
+}
+.page-hero:before{display:none}
+.page-hero>*{position:relative;z-index:1}
+.page-hero .eyebrow{margin-bottom:1.15rem}
+.page-hero h1{
+  max-width:13ch;
+  margin-bottom:1.5rem;
+  font-size:clamp(3.2rem,6vw,6rem);
+  text-shadow:none;
+}
+.page-hero p{
+  max-width:44rem;
+  margin-bottom:0;
+  font-size:clamp(1.08rem,1.6vw,1.25rem);
+  color:var(--soft);
+}
+@media(max-width:900px){
+  .page-hero{padding:4rem 0 3rem}
+}
