@@ -358,3 +358,23 @@ footer{width:min(1180px,calc(100% - 2rem));margin:0 auto;padding:2.2rem 0 3rem;b
 @media(max-width:900px){
   .page-hero{padding:4rem 0 3rem}
 }
+
+
+/* Full-width black navigation bar */
+.site-header{
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:1rem max(1rem,calc((100vw - 1180px)/2));
+  background:#080b0d;
+  border:0;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  border-radius:0;
+  box-shadow:none;
+}
+@media(max-width:900px){
+  .site-header{
+    width:100%;
+    padding:1rem;
+  }
+}
