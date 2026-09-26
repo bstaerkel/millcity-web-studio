@@ -378,3 +378,176 @@ footer{width:min(1180px,calc(100% - 2rem));margin:0 auto;padding:2.2rem 0 3rem;b
     padding:1rem;
   }
 }
+
+
+/* 2026-09-26: carry the quieter homepage dark theme across every page */
+body{
+  background:#0b1014;
+}
+
+main{
+  background:#0b1014;
+}
+
+.page-hero,
+.service-list,
+.pricing-section,
+.process,
+.case-study,
+.process-heading,
+.upcoming,
+.about-grid,
+.about-photos,
+.principles,
+.contact-grid{
+  background:transparent;
+}
+
+.pricing-grid{
+  gap:0;
+  border-top:1px solid rgba(255,255,255,.10);
+}
+.pricing-grid article{
+  padding:1.8rem 2rem 1.8rem 0;
+  border:0;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.pricing-grid article+article{
+  padding-left:2rem;
+  border-left:1px solid rgba(255,255,255,.08);
+}
+
+.process .card-grid,
+.principles .card-grid{
+  gap:0;
+  border-top:1px solid rgba(255,255,255,.10);
+}
+.process .card-grid article,
+.principles .card-grid article{
+  padding:1.8rem 2rem 1.8rem 0;
+  border:0;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.process .card-grid article+article,
+.principles .card-grid article+article{
+  padding-left:2rem;
+  border-left:1px solid rgba(255,255,255,.08);
+}
+.process .card-grid article>span{
+  width:auto;
+  height:auto;
+  display:block;
+  margin:0 0 1.25rem;
+  border:0;
+  border-radius:0;
+  color:var(--brick);
+}
+
+.case-panel{
+  min-height:360px;
+  padding:2rem;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:4px;
+  background:#11181d;
+  box-shadow:none;
+}
+.case-notes{
+  gap:0;
+  border-top:1px solid rgba(255,255,255,.10);
+}
+.case-notes>div{
+  padding:1.8rem 2rem 1.8rem 0;
+  border:0;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.case-notes>div+div{
+  padding-left:2rem;
+  border-left:1px solid rgba(255,255,255,.08);
+}
+.pill-row span{
+  background:transparent;
+  border-color:rgba(255,255,255,.14);
+}
+
+.simple-cta{
+  padding:3rem 0;
+  border:0;
+  border-top:1px solid rgba(255,255,255,.10);
+  border-bottom:1px solid rgba(255,255,255,.10);
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+
+.contact-form{
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+  border-radius:4px;
+  background:#11181d;
+  border-color:rgba(255,255,255,.13);
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+  outline:1px solid var(--cyan);
+  outline-offset:1px;
+}
+.contact-aside{
+  border-left-color:rgba(255,255,255,.10);
+}
+
+.about-stat{
+  border-top-color:rgba(255,255,255,.10);
+}
+.family-photo-image{
+  border-radius:4px;
+  box-shadow:none;
+}
+.photo-placeholder figcaption{
+  padding-top:.7rem;
+}
+
+.upcoming{
+  border-top:1px solid rgba(255,255,255,.10);
+}
+
+.button.primary{
+  background:var(--brick);
+  box-shadow:none;
+}
+.button.secondary{
+  background:transparent;
+  border-color:rgba(255,255,255,.20);
+  color:var(--text);
+}
+
+@media(max-width:900px){
+  .pricing-grid article,
+  .pricing-grid article+article,
+  .process .card-grid article,
+  .process .card-grid article+article,
+  .principles .card-grid article,
+  .principles .card-grid article+article,
+  .case-notes>div,
+  .case-notes>div+div{
+    padding:1.5rem 0;
+    border-left:0;
+  }
+  .simple-cta{padding:2.5rem 0}
+}
