@@ -522,3 +522,73 @@ footer strong{color:#f0eadf}
   .approach-section{padding:2.2rem}
   .page-hero{padding:2.4rem 1.4rem}
 }
+
+
+/* Mill District detail refinements */
+.brand-mark span{
+  top:-5px;
+  z-index:2;
+}
+.brand-mark:before{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:9px;
+  width:27px;
+  height:2px;
+  transform:translateX(-50%);
+  border-radius:2px;
+  background:rgba(112,199,221,.58);
+  box-shadow:0 0 7px rgba(112,199,221,.22);
+}
+.brand-mark:after{
+  left:50%;
+  bottom:10px;
+  width:27px;
+  height:14px;
+  transform:translateX(-50%);
+  border:1.5px solid rgba(112,199,221,.52);
+  border-bottom:0;
+  border-radius:28px 28px 0 0;
+  box-shadow:0 0 8px rgba(112,199,221,.16);
+}
+
+/* Staggered brick hint inspired by the converted Mill District warehouses */
+.hero-dark:before{
+  opacity:.27;
+  background:
+    linear-gradient(to bottom,transparent 0 21px,rgba(216,209,196,.055) 21px 22px) 0 0/100% 22px,
+    linear-gradient(to right,transparent 0 45px,rgba(155,77,53,.07) 45px 46px) 0 0/92px 44px,
+    linear-gradient(to right,transparent 0 45px,rgba(155,77,53,.06) 45px 46px) 46px 22px/92px 44px;
+  transform:none;
+}
+
+.brick-grid{
+  opacity:.55;
+  background:
+    linear-gradient(to bottom,transparent 0 21px,rgba(220,198,174,.15) 21px 22px) 0 0/100% 22px,
+    linear-gradient(to right,transparent 0 45px,rgba(220,198,174,.12) 45px 46px) 0 0/92px 44px,
+    linear-gradient(to right,transparent 0 45px,rgba(220,198,174,.10) 45px 46px) 46px 22px/92px 44px;
+}
+
+.page-hero{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+}
+.page-hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  opacity:.18;
+  background:
+    linear-gradient(to bottom,transparent 0 23px,rgba(216,209,196,.08) 23px 24px) 0 0/100% 24px,
+    linear-gradient(to right,transparent 0 49px,rgba(155,77,53,.10) 49px 50px) 0 0/100px 48px,
+    linear-gradient(to right,transparent 0 49px,rgba(155,77,53,.08) 49px 50px) 50px 24px/100px 48px;
+  pointer-events:none;
+}
+
+@media(max-width:800px){
+  .desktop-nav{gap:.85rem}
+}
