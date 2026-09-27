@@ -4,11 +4,14 @@ Development site for **Mill City Web Studio**, an independent Minneapolis web st
 
 ## Current status
 
+**Version 1 of the site is complete.**
+
 - Framework: Astro
 - Development hosting: GitHub Pages
 - Planned production hosting: Cloudflare
-- Working production domain: `millcitywebstudio.com` (not yet purchased/connected)
+- Planned production domain: `millcitywebstudio.com`
 - Dev site is intentionally `noindex` until production launch
+- Static-site hosting will be included for Mill City Web Studio clients, with updates available as needed
 
 ## Run locally
 
@@ -67,12 +70,12 @@ Enable **Settings → Pages → Source → GitHub Actions** in the repository.
 - `docs/INFRASTRUCTURE.md` — GitHub Pages dev hosting and planned Cloudflare production path
 - `docs/SEO.md` — dev noindex strategy and production SEO checklist
 
-## Before production launch
+## Next steps
 
-- Purchase/connect the final domain.
-- Move or deploy production hosting to Cloudflare.
-- Update `astro.config.mjs` for the production domain and remove the GitHub Pages base path.
-- Replace the temporary contact form email/endpoint.
-- Remove `noindex, nofollow` from the production layout.
-- Add production canonical/social metadata, sitemap, robots.txt, Search Console, and analytics if desired.
-- Add a final logo/brand asset if the text/monogram treatment changes.
+1. Purchase/connect `millcitywebstudio.com` and configure the production domain in Cloudflare.
+2. Deploy the production build and update `astro.config.mjs` for the final domain.
+3. Replace the temporary contact form email/endpoint.
+4. Remove `noindex, nofollow` for production.
+5. Add canonical/social metadata, sitemap, robots.txt, Google Search Console, and analytics if desired.
+6. Create and verify a Google Business Profile for Mill City Web Studio.
+7. Add the production website, business details, service area, description, photos/logo, and services to the Google Business Profile.
