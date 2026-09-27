@@ -741,3 +741,73 @@ h3{
     object-position:center;
   }
 }
+
+
+/* 2026-09-27: v1 desktop/mobile spacing cleanup */
+.home-about{
+  display:block;
+}
+.home-about-copy{
+  max-width:860px;
+}
+.footer-links{
+  flex-wrap:wrap;
+}
+
+@media(max-width:900px){
+  .proof-strip{
+    gap:.55rem 1.1rem;
+    padding:1.15rem 0 1.3rem;
+  }
+  .proof-strip span{
+    padding-right:0;
+  }
+
+  .services-home,
+  .featured-home,
+  .about-tease,
+  .process,
+  .principles,
+  .pricing-section,
+  .upcoming{
+    padding-top:4.25rem;
+    padding-bottom:4.25rem;
+  }
+
+  .service-list{
+    padding-top:1.5rem;
+    padding-bottom:4.25rem;
+  }
+
+  .pricing-grid{
+    gap:0;
+  }
+
+  .footer-links{
+    row-gap:.55rem;
+    column-gap:1rem;
+  }
+}
+
+@media(max-width:600px){
+  .section-shell{
+    width:min(1180px,calc(100% - 1.5rem));
+  }
+
+  .hero-dark h1{
+    font-size:clamp(3rem,14vw,4.4rem);
+  }
+
+  .page-hero h1{
+    font-size:clamp(2.65rem,12vw,3.6rem);
+  }
+
+  .service-list article{
+    grid-template-columns:30px 1fr;
+    gap:1rem;
+  }
+
+  .button-row{
+    gap:.65rem;
+  }
+}
