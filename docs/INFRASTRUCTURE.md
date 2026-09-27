@@ -44,6 +44,8 @@ This keeps the temporary GitHub Pages URL out of search results while branding, 
 
 ## Planned production hosting
 
+Version 1 is complete on GitHub Pages. The next infrastructure milestone is connecting the production domain and moving the public site to Cloudflare.
+
 When the final domain is purchased, the intended production path is:
 
 ```text
@@ -58,13 +60,16 @@ millcitywebstudio.com
 
 At that point:
 
-1. Deploy the site to its own Cloudflare Worker/static project.
-2. Connect the production domain.
-3. Update `astro.config.mjs` so `site` uses the production domain.
-4. Remove the GitHub Pages `base` path.
-5. Remove the development `noindex` directive.
-6. Add canonical URLs, sitemap, robots.txt, analytics, and Search Console verification.
-7. Keep GitHub Pages only if a separate dev/preview environment is still useful.
+1. Add/connect `millcitywebstudio.com` in Cloudflare and confirm DNS ownership.
+2. Deploy the site to its own Cloudflare Worker/static project.
+3. Attach the production hostname and confirm HTTPS.
+4. Update `astro.config.mjs` so `site` uses the production domain.
+5. Remove the GitHub Pages `base` path.
+6. Remove the development `noindex` directive.
+7. Add canonical URLs, sitemap, robots.txt, analytics, and Search Console verification.
+8. Keep GitHub Pages only if a separate dev/preview environment is still useful.
+
+Before changing production routing, verify that the Mill City hostname is isolated from the existing MLAesthetics/client routing so one wildcard Worker route cannot capture multiple unrelated sites.
 
 ## Relationship to client hosting
 
