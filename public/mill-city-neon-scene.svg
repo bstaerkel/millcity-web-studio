@@ -46,22 +46,34 @@
 
 <g fill="#091017">
   <!-- low riverfront blocks -->
-  <rect x="20" y="344" width="90" height="146"/>
-  <rect x="120" y="313" width="76" height="177"/>
-  <rect x="207" y="340" width="72" height="150"/>
+  <rect x="8" y="362" width="72" height="128"/>
+  <rect x="88" y="334" width="58" height="156"/>
+  <rect x="155" y="350" width="66" height="140"/>
+  <rect x="230" y="320" width="52" height="170"/>
 
-  <!-- IDS-inspired stepped tower -->
-  <path d="M292 490V208H351V190H392V208H448V490Z"/>
-  <path d="M319 208L370 162L421 208Z"/>
+  <!-- Foshay-inspired tapered tower -->
+  <path d="M286 490V286L299 254H343L356 286V490Z"/>
+  <path d="M304 254V228H338V254Z"/>
+  <path d="M318 228V195H324V228Z"/>
 
-  <!-- slimmer downtown towers -->
-  <rect x="462" y="272" width="56" height="218"/>
-  <path d="M530 490V248H591V229H616V248H642V490Z"/>
-  <rect x="655" y="310" width="68" height="180"/>
+  <!-- IDS-inspired stepped glass tower -->
+  <path d="M370 490V174H421V153H463V174H514V490Z"/>
+  <path d="M394 174L442 132L490 174Z"/>
 
-  <!-- antenna / rooftop details -->
-  <path d="M370 162V123M562 229V188M598 229V202" stroke="#131d25" stroke-width="6"/>
-  <path d="M352 123H388M550 188H575M589 202H608" stroke="#24343f" stroke-width="3"/>
+  <!-- Capella-inspired crown tower -->
+  <path d="M527 490V224H586V202H638V224H664V490Z"/>
+  <path d="M552 202V172H612V202Z"/>
+  <path d="M563 172Q582 146 601 172Z"/>
+  <path d="M582 147V120" stroke="#131d25" stroke-width="6"/>
+
+  <!-- additional downtown towers -->
+  <rect x="676" y="265" width="48" height="225"/>
+  <path d="M732 490V300H786V281H812V300H838V490Z"/>
+  <rect x="849" y="332" width="55" height="158"/>
+
+  <!-- rooftop details -->
+  <path d="M442 132V102M706 265V226M759 281V252" stroke="#131d25" stroke-width="6"/>
+  <path d="M425 102H459M694 226H718M748 252H770" stroke="#24343f" stroke-width="3"/>
 </g>
 
 <!-- glass highlights / office windows -->
@@ -162,9 +174,27 @@
 
 <!-- main neon sign -->
 <g transform="translate(782 95)">
-  <rect x="0" y="0" width="700" height="330" rx="16" fill="#090d10" stroke="#222c31" stroke-width="8"/>
-  <rect x="14" y="14" width="672" height="302" rx="10" fill="none" stroke="#73d8ef" stroke-width="4" opacity=".7" filter="url(#cyanGlow)"/>
-  <rect x="28" y="28" width="644" height="274" rx="8" fill="none" stroke="#8d412d" stroke-width="3" opacity=".9"/>
+  <!-- restored vintage rooftop sign cabinet -->
+  <rect x="0" y="0" width="700" height="330" rx="22" fill="#0b0d0e" stroke="#4b3329" stroke-width="10"/>
+  <rect x="12" y="12" width="676" height="306" rx="16" fill="#121516" stroke="#b86f44" stroke-width="3" opacity=".98"/>
+  <rect x="22" y="22" width="656" height="286" rx="12" fill="none" stroke="#e7c78e" stroke-width="2" opacity=".48"/>
+  <rect x="34" y="34" width="632" height="262" rx="8" fill="none" stroke="#73d8ef" stroke-width="3" opacity=".58" filter="url(#cyanGlow)"/>
+
+  <!-- vintage marquee bulbs -->
+  <g fill="#ffd99a" opacity=".92" filter="url(#orangeGlow)">
+    <circle cx="48" cy="24" r="4"/><circle cx="92" cy="24" r="4"/><circle cx="136" cy="24" r="4"/>
+    <circle cx="180" cy="24" r="4"/><circle cx="224" cy="24" r="4"/><circle cx="268" cy="24" r="4"/>
+    <circle cx="432" cy="24" r="4"/><circle cx="476" cy="24" r="4"/><circle cx="520" cy="24" r="4"/>
+    <circle cx="564" cy="24" r="4"/><circle cx="608" cy="24" r="4"/><circle cx="652" cy="24" r="4"/>
+    <circle cx="48" cy="306" r="4"/><circle cx="92" cy="306" r="4"/><circle cx="136" cy="306" r="4"/>
+    <circle cx="180" cy="306" r="4"/><circle cx="224" cy="306" r="4"/><circle cx="268" cy="306" r="4"/>
+    <circle cx="432" cy="306" r="4"/><circle cx="476" cy="306" r="4"/><circle cx="520" cy="306" r="4"/>
+    <circle cx="564" cy="306" r="4"/><circle cx="608" cy="306" r="4"/><circle cx="652" cy="306" r="4"/>
+    <circle cx="24" cy="66" r="4"/><circle cx="24" cy="110" r="4"/><circle cx="24" cy="154" r="4"/>
+    <circle cx="24" cy="198" r="4"/><circle cx="24" cy="242" r="4"/><circle cx="24" cy="286" r="4"/>
+    <circle cx="676" cy="66" r="4"/><circle cx="676" cy="110" r="4"/><circle cx="676" cy="154" r="4"/>
+    <circle cx="676" cy="198" r="4"/><circle cx="676" cy="242" r="4"/><circle cx="676" cy="286" r="4"/>
+  </g>
 
   <!-- Mill City neon icon plaque -->
   <g transform="translate(280 -102) scale(.55)">
@@ -189,6 +219,7 @@
         filter="url(#orangeGlow)">MILL CITY</text>
 
   <path d="M78 185H622" stroke="#8d412d" stroke-width="3"/>
+  <path d="M96 194H604" stroke="#d5b46f" stroke-width="1" opacity=".32"/>
   <text x="350" y="242" text-anchor="middle"
         font-family="Arial,Helvetica,sans-serif" font-size="50" font-weight="700" letter-spacing="16"
         fill="#fff3cf" stroke="#f28a38" stroke-width="2" paint-order="stroke fill"
@@ -196,6 +227,7 @@
   <text x="350" y="281" text-anchor="middle"
         font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" letter-spacing="7"
         fill="#89e9fb" opacity=".9">MINNEAPOLIS · MINNESOTA</text>
+  <path d="M84 291H616" stroke="#714c37" stroke-width="2" opacity=".7"/>
 </g>
 
 <!-- warm warehouse / sign reflections in the river -->
