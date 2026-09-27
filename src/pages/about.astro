@@ -66,6 +66,17 @@ import { pagePath } from '../lib/paths';
 </BaseLayout>
 
 <style>
+  .about-photos{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:2rem;
+    align-items:start;
+  }
+  .about-photos .family-photo:first-child{
+    transform:translateY(0);
+  }
+  .about-photos .family-photo:last-child{
+    transform:translateY(2rem);
+  }
   .family-photo-image{
     display:block;
     width:100%;
@@ -73,7 +84,7 @@ import { pagePath } from '../lib/paths';
     object-fit:contain;
     object-position:center;
     border:1px solid rgba(255,255,255,.10);
-    border-radius:16px;
+    border-radius:4px;
   }
   .mill-city-story{
     display:grid;
@@ -132,6 +143,8 @@ import { pagePath } from '../lib/paths';
   .mill-city-story-copy h2{max-width:12ch}
   .mill-city-story-copy p{color:var(--soft);max-width:34rem}
   @media(max-width:900px){
+    .about-photos{grid-template-columns:1fr;gap:1.5rem}
+    .about-photos .family-photo:last-child{transform:none}
     .family-photo-image{min-height:0}
     .mill-city-story{grid-template-columns:1fr;gap:2.5rem;padding:4rem 0}
     .mill-city-story-media,.mill-city-story-media img{min-height:360px;height:360px}
