@@ -556,7 +556,9 @@ main{
 
 .service-list article,
 .case-meta,
-.about-stat,
+.about-stat{
+  border-color:rgba(255,255,255,.09);
+}
 
 .pricing-grid article,
 .case-notes>div,
@@ -593,8 +595,7 @@ main{
   color:var(--text);
 }
 
-.family-photo-image,
-.photo-placeholder-art{
+.family-photo-image{
   border-radius:4px;
   box-shadow:none;
 }
