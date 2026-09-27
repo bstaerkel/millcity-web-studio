@@ -695,3 +695,47 @@ h3{
   h2{font-size:clamp(2.25rem,9vw,3.5rem)}
   h3{font-size:1.75rem}
 }
+
+
+/* 2026-09-26: bring selective neon character back into the brand */
+.brand-icon{
+  width:42px;
+  height:42px;
+  filter:
+    drop-shadow(0 0 5px rgba(104,232,255,.35))
+    drop-shadow(0 0 7px rgba(255,90,47,.24));
+}
+.brand-copy strong{
+  color:#ffe7ad;
+  text-shadow:0 0 10px rgba(255,90,47,.22);
+}
+.brand-copy span{
+  color:#b9f2ff;
+  text-shadow:0 0 8px rgba(115,216,239,.16);
+}
+
+.hero-neon-scene{
+  width:100%;
+  margin:3.25rem 0 0;
+  padding:0;
+}
+.hero-neon-scene img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16 / 7;
+  object-fit:cover;
+  object-position:center;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:4px;
+  background:#070b0e;
+  box-shadow:0 24px 70px rgba(0,0,0,.28);
+}
+@media(max-width:900px){
+  .brand-icon{width:40px;height:40px}
+  .hero-neon-scene{margin-top:2.4rem}
+  .hero-neon-scene img{
+    aspect-ratio:4 / 3;
+    object-position:64% center;
+  }
+}
