@@ -192,45 +192,45 @@
 <g fill="none" stroke-linecap="round" stroke-linejoin="round">
   <!-- primary posts -->
   <g stroke="#171b1e" stroke-width="14">
-    <path d="M842 438V106"/>
-    <path d="M1118 438V90"/>
-    <path d="M1388 438V120"/>
+    <path d="M865 438V132"/>
+    <path d="M1118 438V116"/>
+    <path d="M1365 438V144"/>
   </g>
 
   <!-- cross members -->
   <g stroke="#242a2e" stroke-width="10">
-    <path d="M792 118H1470"/>
-    <path d="M808 176H1454"/>
-    <path d="M824 430H1422"/>
+    <path d="M828 145H1438"/>
+    <path d="M842 196H1426"/>
+    <path d="M852 430H1408"/>
   </g>
 
   <!-- diagonal braces -->
   <g stroke="#32383b" stroke-width="8">
-    <path d="M842 430L1118 176"/>
-    <path d="M1118 430L1388 176"/>
-    <path d="M842 176L1118 430"/>
-    <path d="M1118 176L1388 430"/>
+    <path d="M865 430L1118 196"/>
+    <path d="M1118 430L1365 196"/>
+    <path d="M865 196L1118 430"/>
+    <path d="M1118 196L1365 430"/>
   </g>
 
   <!-- warm aged-metal edge -->
   <g stroke="#7b4f39" stroke-width="2.5" opacity=".78">
-    <path d="M842 438V106"/>
-    <path d="M1118 438V90"/>
-    <path d="M1388 438V120"/>
-    <path d="M792 118H1470"/>
-    <path d="M824 430H1422"/>
+    <path d="M865 438V132"/>
+    <path d="M1118 438V116"/>
+    <path d="M1365 438V144"/>
+    <path d="M828 145H1438"/>
+    <path d="M852 430H1408"/>
   </g>
 
   <!-- rooftop feet -->
   <g fill="#171b1e" stroke="#6f4a37" stroke-width="3">
-    <rect x="821" y="426" width="42" height="28" rx="3"/>
+    <rect x="844" y="426" width="42" height="28" rx="3"/>
     <rect x="1097" y="426" width="42" height="28" rx="3"/>
-    <rect x="1367" y="426" width="42" height="28" rx="3"/>
+    <rect x="1344" y="426" width="42" height="28" rx="3"/>
   </g>
 </g>
 
 <!-- main neon sign -->
-<g transform="translate(782 95)">
+<g transform="translate(820 122) scale(.88)">
   <!-- restored vintage rooftop sign cabinet -->
   <rect x="0" y="0" width="700" height="330" rx="22" fill="#0b0d0e" stroke="#4b3329" stroke-width="10"/>
   <rect x="12" y="12" width="676" height="306" rx="16" fill="#121516" stroke="#b86f44" stroke-width="3" opacity=".98"/>
